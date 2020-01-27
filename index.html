@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Destinations</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Oh, the Places You'll Go!</h1>
+    </div>
+    <div class="well">
+      <h3>Tell us about your favorite destinations!</h3>
+      <form>
+        <div class="form-group">
+          <label for="name">What is the name of this destination?</label>
+          <input type="text" class="form-control" id="name">
+        </div> 
+        <div class="form-group">
+          <label for="city">City:</label>
+          <input type="text" class="form-control" id="city">
+        </div> 
+        <div class="form-group">
+          <label for="state">State:</label>
+          <input type="text" class="form-control" id="state">
+        </div>
+        <div class="form-group">
+          <label for="landmarks">What landmarks does this location have? (separate multiple answers by commas)</label>
+          <input type="text" class="form-control" id="landmarks">
+        </div>
+        <div class="form-group">
+            <label for="seasons">During which seasons should someone visit (spring, summer, fall, and/or winter)? Separate each season with a comma.</label>
+            <input type="text" class="form-control" id="seasons">
+          </div>
+        <div class="form-group">
+          <label for="notes">Are there any other notes you have about this destination?</label>
+          <input type="text" class="form-control" id="notes">
+        </div>
+        <button type="submit" class="btn">Add to my list of destinaitons!</button>
+      </form>
+    </div>
+    <div class="well">
+      <h3>Destination List</h3>
+      <div class="row">
+        <div class="col-md-6">
+         <ul id="destinations">     
+         </ul>
+       </div>
+       <div id="show-details" class="col-md-6">
+        <ul>
+          <li>Destination Name: <span class="name"></span></li>
+          <li>City: <span class="city"></span></li>
+          <li>State: <span class="state"></span></li>
+          <li>Landmarks: <span class="landmarks"></span></li>
+          <li>Seasons to visit: <span class="seasons"></span></li>
+          <li>Notes: <span class="notes"></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
